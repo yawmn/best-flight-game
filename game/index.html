@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basalt Horizon — Volcanic airlift over the Ember Isles</title>
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0a0d18; }
+  #gl, #hud { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; }
+  #hud { pointer-events: none; }
+  #nogl {
+    display: none; position: absolute; inset: 0; align-items: center; justify-content: center;
+    color: #f4f1e8; font: 600 18px system-ui, sans-serif; text-align: center; padding: 40px;
+    background: #0a0d18;
+  }
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="hud"></canvas>
+<div id="nogl">Basalt Horizon needs WebGL. Please open this page in a desktop browser with WebGL enabled.</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
